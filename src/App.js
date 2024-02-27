@@ -5,14 +5,18 @@ import { useState } from 'react';
 
 function App() {
 
-const [colorMenu,setColorMenu] = useState(1)
+const [colorMenu,setcolorMenu] = useState("")
+
+function changeMenu(number){
+  setcolorMenu(number)
+}
 
 
 
   return (
     <div className='body'>
       <header>
-        <div className='headerLogo '><img src={logo}></img></div>
+        <div className='headerLogo '><img src={logo} alt='imagem com logo e nome Instagram'></img></div>
         <div className='headerIcons'>
           <div><i class="fas fa-home"></i></div>
           <div><i class="fas fa-location-arrow"></i></div>
@@ -24,15 +28,15 @@ const [colorMenu,setColorMenu] = useState(1)
       </header>
       <div className='containerCards'>
         <section className='left'>
-          <a  className={`S${colorMenu}`} href='#'>Edit Profile</a>
-          <a href='#'>Account</a>
-          <a href='#'>Profile Insight</a>
-          <a href='#'>Change Passaword</a>
-          <a href='#'>Notifications</a>
-          <a href='#'>Privacy and Security</a>
-          <a href='#'>Longin Activiy</a>
-          <a href='#'>Help</a>
-          <a className='linklogout' href='#'>Logout</a>
+          <a onClick={()=>{changeMenu(1)}}  className={ `noSelectButton ${colorMenu===1 ? "selectButton":""}`}href='#'>Edit Profile</a>
+          <a onClick={()=>{changeMenu(2)}}  className={ `noSelectButton ${colorMenu===2 ? "selectButton":""}`}href='#'>Account</a>
+          <a onClick={()=>{changeMenu(3)}}  className={ `noSelectButton ${colorMenu===3 ? "selectButton":""}`} href='#'>Profile Insight</a>
+          <a onClick={()=>{changeMenu(4)}}  className={ `noSelectButton ${colorMenu===4 ? "selectButton":""}`} href='#'>Change Passaword</a>
+          <a onClick={()=>{changeMenu(5)}}  className={ `noSelectButton ${colorMenu===5 ? "selectButton":""}`} href='#'>Notifications</a>
+          <a onClick={()=>{changeMenu(6)}}  className={ `noSelectButton ${colorMenu===6 ? "selectButton":""}`} href='#'>Privacy and Security</a>
+          <a onClick={()=>{changeMenu(7)}}  className={ `noSelectButton ${colorMenu===7 ? "selectButton":""}`} href='#'>Longin Activiy</a>
+          <a onClick={()=>{changeMenu(8)}}  className={ `noSelectButton ${colorMenu===8 ? "selectButton":""}`} href='#'>Help</a>
+          <a onClick={()=>{changeMenu(9)}}  className={ `noSelectButton ${colorMenu===9 ? "selectLogout":""}`} href='#'>Logout</a>
         </section>
         <section className='rigth'>
           <div className='divCards'>

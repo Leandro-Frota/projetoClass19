@@ -43,7 +43,7 @@ header {
   gap: 1rem;
 }
 
-a {
+.noSelectButton {
   text-decoration: none;
   color: black;
   font-size: 0.8rem;
@@ -82,7 +82,9 @@ h2 {
 .viewdetails {
   font-size: 10px;
 }
-.linklogout { 
+
+
+.selectLogout { 
   color: red;
 }
 
