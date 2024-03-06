@@ -1,31 +1,24 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import logo from './assets/insta.png';
+
 import './App.css';
 import { useState } from 'react';
+import Header from './components/Header/header';
 
 function App() {
 
 const [colorMenu,setcolorMenu] = useState("")
+
+
 
 function changeMenu(number){
   setcolorMenu(number)
 }
 
 
-
   return (
     <div className='body'>
-      <header>
-        <div className='headerLogo '><img src={logo} alt='imagem com logo e nome Instagram'></img></div>
-        <div className='headerIcons'>
-          <div><i class="fas fa-home"></i></div>
-          <div><i class="fas fa-location-arrow"></i></div>
-          <div><i class="far fa-plus-square"></i></div>
-          <div><i class="far fa-play-circle"></i></div>
-          <div><i class="far fa-heart"></i></div>
-          <div><i class="fas fa-user"></i></div>
-        </div>
-      </header>
+      <Header/>
+     
       <div className='containerCards'>
         <section className='left'>
           <a onClick={()=>{changeMenu(1)}}  className={ `noSelectButton ${colorMenu===1 ? "selectButton":""}`}href='#'>Edit Profile</a>
@@ -51,12 +44,12 @@ function changeMenu(number){
               <a className='viewdetails' href='#'>View Details</a>
             </div>
             <div className='card'>
-              <h2>Total <br /> Followers</h2>
+              <h2>Account <br /> Reached</h2>
               <p>1244 </p>
               <a className='viewdetails' href='#'>View Details</a>
             </div>
             <div className='card'>
-              <h2>Total <br /> Followers</h2>
+              <h2>Account <br /> Engaged</h2>
               <p>1244 </p>
               <a className='viewdetails' href='#'>View Details</a>
             </div>
