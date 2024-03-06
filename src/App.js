@@ -72,11 +72,41 @@ function changeMenu(number){
           </div>
 
           <div className='divImagens'>
-            <div><img className='imageLinks' src='https://source.unsplash.com/random/800x600?sig=1' alt="imagem aleatória"></img></div>
-            <div><img className='imageLinks' src='https://source.unsplash.com/random/800x600?sig=2' alt="imagem aleatória"></img></div>
-            <div><img className='imageLinks' src='https://source.unsplash.com/random/800x600?sig=3' alt="imagem aleatória"></img></div>
-            <div><img className='imageLinks' src='https://source.unsplash.com/random/800x600?sig=4' alt="imagem aleatória"></img></div>
-            <div><img className='imageLinks' src='https://source.unsplash.com/random/800x600?sig=5' alt="imagem aleatória"></img></div>
+            <div className='divImage'>
+              <img className='imageLinks' src='https://source.unsplash.com/random/800x600?sig=1' alt="imagem aleatória"></img>
+              <div className='actionImage'>
+                <i class="far fa-heart"></i>
+                <i class="far fa-comment"></i>
+              </div>
+            </div>
+            <div className='divImage'>
+              <img className='imageLinks' src='https://source.unsplash.com/random/800x600?sig=2' alt="imagem aleatória"></img>
+              <div className='actionImage'>
+                <i class="far fa-heart"></i>
+                <i class="far fa-comment"></i>
+              </div>
+            </div>
+            <div className='divImage'>
+              <img className='imageLinks' src='https://source.unsplash.com/random/800x600?sig=3' alt="imagem aleatória"></img>
+              <div className='actionImage'>
+                <i class="far fa-heart"></i>
+                <i class="far fa-comment"></i>
+              </div>
+            </div>
+            <div className='divImage'>
+              <img className='imageLinks' src='https://source.unsplash.com/random/800x600?sig=4' alt="imagem aleatória"></img>
+              <div className='actionImage'>
+                <i class="far fa-heart"></i>
+                <i class="far fa-comment"></i>
+              </div>
+            </div>
+            <div className='divImage'>
+              <img className='imageLinks' src='https://source.unsplash.com/random/800x600?sig=5' alt="imagem aleatória"></img>
+              <div className='actionImage'>
+                <i class="far fa-heart"></i>
+                <i class="far fa-comment"></i>
+              </div>
+            </div>
 
 
           </div>

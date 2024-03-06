@@ -96,15 +96,38 @@ h2 {
 
 }
 
+.divImage {
+  flex: 1;
+  position: relative;
+  height: 150px;
+}
+
 .imageLinks {
-  width: 12rem;
-  height: 10rem;
-  border-radius: 10px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  flex: 1;
+  max-height: 150px;
+  border-radius: 20px;
+  object-fit: cover;
+  z-index: 10;
+}
+
+.actionImage {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  column-gap: 10px;
+  z-index: 5;
 }
 
 .selectButton{
   color: #008ef6;
   background-color: #d5ebf9;
   font-weight: bold;
+}
+
+.imageLinks:hover {
+  max-height: 110px;
 }
 
