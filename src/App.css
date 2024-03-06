@@ -9,19 +9,17 @@
   height: 100vh;
 
 }
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0.5rem 2rem 1rem 2rem;
-  align-items: center;
+
+
+#hover{
+  transform: scale(1.3);
+
 }
 
-.headerIcons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 1rem;
+#hoverHeart{
+  transform: scale(1.3);
+  color: red;
+  
 }
 
 .headerLogo img {
