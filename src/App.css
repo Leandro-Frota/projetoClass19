@@ -81,6 +81,9 @@ h2 {
 
 .viewdetails {
   font-size: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+  
 }
 
 
