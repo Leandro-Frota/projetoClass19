@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Header from './components/Header/header';
 import ButtonMenu from './components/Menu/buttonMenu';
 import CardsScores from './components/Cards/cardsScores';
+import { CardImage } from './components/Images/images';
 
 function App() {
 
@@ -117,48 +118,16 @@ function App() {
         </div>
           <div>
             <h3>Recent Post</h3>
-
           </div>
 
-          <div className='divImagens'>
-            <div className='divImage'>
-              <img className='imageLinks' src='https://source.unsplash.com/random/800x600?sig=1' alt="imagem aleatória"></img>
-              <div className='actionImage'>
-                <i class="far fa-heart"></i>
-                <i class="far fa-comment"></i>
-              </div>
-            </div>
-            <div className='divImage'>
-              <img className='imageLinks' src='https://source.unsplash.com/random/800x600?sig=2' alt="imagem aleatória"></img>
-              <div className='actionImage'>
-                <i class="far fa-heart"></i>
-                <i class="far fa-comment"></i>
-              </div>
-            </div>
-            <div className='divImage'>
-              <img className='imageLinks' src='https://source.unsplash.com/random/800x600?sig=3' alt="imagem aleatória"></img>
-              <div className='actionImage'>
-                <i class="far fa-heart"></i>
-                <i class="far fa-comment"></i>
-              </div>
-            </div>
-            <div className='divImage'>
-              <img className='imageLinks' src='https://source.unsplash.com/random/800x600?sig=4' alt="imagem aleatória"></img>
-              <div className='actionImage'>
-                <i class="far fa-heart"></i>
-                <i class="far fa-comment"></i>
-              </div>
-            </div>
-            <div className='divImage'>
-              <img className='imageLinks' src='https://source.unsplash.com/random/800x600?sig=5' alt="imagem aleatória"></img>
-              <div className='actionImage'>
-                <i class="far fa-heart"></i>
-                <i class="far fa-comment"></i>
-              </div>
-            </div>
-
-
-          </div>
+        <div className='divImagens'>
+          <CardImage />
+          <CardImage />
+          <CardImage />
+          <CardImage />
+          <CardImage />
+   
+        </div>
 
 
         </section>
